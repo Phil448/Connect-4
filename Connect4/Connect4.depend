@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1604970573 source:c:\users\phil\desktop\projects\connect4\main.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+
