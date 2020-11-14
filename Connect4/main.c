@@ -82,7 +82,7 @@ bool vertical_win (char player, struct board *curr_board) {
 }
 
 // diagonal_win_l(player, curr_board): checks to see if the player
-// has won the game via a diagonal connect 4 ()
+// has won the game via a diagonal connect 4
 bool diagonal_win_l (char player, struct board *curr_board) {
   for (int i = 0; i < 3; ++i){
     for (int j = 0; j < 4; ++j) {
@@ -126,12 +126,12 @@ int main(void) {
   print_board(curr_board);
   while (true) {
     printf("please enter a player code (X / O)\n");
-    if (scanf("%c", &symbol) != 1) {
+    if (scanf(" %c", &symbol) != 1) {
       printf("ERROR: cannot read player code\n");
       break;
     }
-    printf("player code; '%c'\n", symbol);
-    printf("please enter a player slot (1, 2, 3 ...6)\n");
+    printf("player code: '%c'\n", symbol);
+    printf("please enter a player slot (0, 1, 2, 3 ...6)\n");
     if (scanf("%d", &column) != 1) {
       printf("ERROR: cannot read slot number\n");
       break;
